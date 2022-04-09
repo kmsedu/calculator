@@ -191,4 +191,3 @@ function subtract(x, y) {
 };
 
 enableControl();
-gEqualsButton.focus();
