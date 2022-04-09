@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    border: 1px solid lightgray;
+}
+
+button:hover {
+    filter: brightness(97%);
+}
+
+button:active {
+    filter: brightness(95%);
+}
+
+#calc-window {
+    width: 640px;
+    height: 720px;
+    margin: 10vh auto;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-top {
+    flex: 1;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em 2em 0 0;
+}
+
+#calc-display-top {
+    align-self: flex-end;
+    flex: 1;
+}
+
+#calc-display-top-number {
+    padding-right: 15px;
+    font-size: 24px;
+}
+
+#calc-display-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+}
+
+#calc-display-bottom-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+#calc-backspace-button {
+    justify-self: flex-start;
+    align-self: flex-end;
+    width: 21%;
+    height: 32px;
+    background: lightcoral;
+    border: none;
+}
+
+#calc-display-operator {
+    justify-self: flex-end;
+    align-self: center;
+    font-size: 24px;
+}
+
+#calc-display-bottom-number {
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+#calc-bottom {
+    flex: 2.5;
+    display: flex;
+}
+
+#calc-keypad {
+    flex: 1.5;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+}
+
+.calc-button {
+    height: 25%;
+    flex: 1 1 26%;
+    margin: 0;
+    padding: 0;
+}
+
+#calc-keypad-0 {
+    flex: 1 0 227px;
+}
+
+#calc-options {
+    flex: 1;
+    display: flex;
+}
+
+.calc-option {
+    flex: 1 1 26%;
+}
+
+#calc-options-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-options-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc-options-equals {
+    flex-basis: 52%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main id="calc-window">
+        <section id="calc-top">
+            <section id="calc-display-top">
+                <p id="calc-display-top-number"></p>
+            </section>
+            <section id="calc-display-bottom">
+                <button id="calc-backspace-button">←</button>
+                <div id="calc-display-bottom-number-container">
+                    <span id="calc-display-operator"></span>
+                    <p id="calc-display-bottom-number">0</p>
+                </div>
+            </section>
+        </section>
+        <section id="calc-bottom">
+            <section id="calc-keypad">
+                <button id="calc-keypad-7" class="calc-button" accesskey="7">7</button>
+                <button id="calc-keypad-8" class="calc-button">8</button>
+                <button id="calc-keypad-9" class="calc-button">9</button>
+                <button id="calc-keypad-4" class="calc-button">4</button>
+                <button id="calc-keypad-5" class="calc-button">5</button>
+                <button id="calc-keypad-6" class="calc-button">6</button>
+                <button id="calc-keypad-1" class="calc-button">1</button>
+                <button id="calc-keypad-2" class="calc-button">2</button>
+                <button id="calc-keypad-3" class="calc-button">3</button>
+                <button id="calc-keypad-0" class="calc-button">0</button>
+                <button id="calc-keypad-decimal" class="calc-button">.</button>
+            </section>
+            <section id="calc-options">
+                <section id="calc-options-left">
+                    <button id="calc-options-divide" class="calc-option">/</button>
+                    <button id="calc-options-multiply" class="calc-option">*</button>
+                    <button id="calc-options-subtract" class="calc-option">-</button>
+                    <button id="calc-options-add" class="calc-option">+</button>
+                </section>
+                <section id="calc-options-right">
+                    <button id="calc-options-clear" class="calc-option">C</button>
+                    <button id="calc-options-clear-entry" class="calc-option">CE</button>   
+                    <button id="calc-options-equals" class="calc-option">=</button>        
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
