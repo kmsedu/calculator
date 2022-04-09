@@ -7,24 +7,26 @@ button {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(226, 226, 226);
+    background:rgb(243, 243, 243);
 }
 
 button:hover {
-    filter: brightness(97%);
-}
-
-button:active {
     filter: brightness(95%);
 }
 
+button:active {
+    filter: brightness(90%);
+}
+
 #calc-window {
-    width: 640px;
+    width: 560px;
     height: 720px;
     margin: 10vh auto;
     background: lightgray;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 15px lightgray;
 }
 
 #calc-top {
@@ -34,6 +36,8 @@ button:active {
     flex-direction: column;
     justify-content: space-between;
     padding: 2em 2em 0 0;
+    background: rgb(52, 56, 79);
+    color: white;
 }
 
 #calc-display-top {
@@ -44,41 +48,46 @@ button:active {
 #calc-display-top-number {
     padding-right: 15px;
     font-size: 24px;
+    margin: 0;
 }
 
 #calc-display-bottom {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    font-size: 36px;
+    font-size: 48px;
 }
 
 #calc-display-bottom-number-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-self: flex-end;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    align-items: stretch;
     gap: 1em;
-    padding-bottom: 15px;
     padding-right: 15px;
 }
 
 #calc-backspace-button {
     justify-self: flex-start;
-    align-self: flex-end;
+    align-self: flex-start;
     width: 21%;
     height: 32px;
-    background: lightcoral;
+    background:rgb(243, 114, 114);
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     border: none;
+    margin-top: -32px;
+    padding: 0;
 }
 
 #calc-display-operator {
     justify-self: flex-end;
     align-self: center;
     font-size: 24px;
-}
-
-#calc-display-bottom-number {
-    justify-self: flex-end;
-    align-self: flex-start;
 }
 
 #calc-bottom {
@@ -101,7 +110,7 @@ button:active {
 }
 
 #calc-keypad-0 {
-    flex: 1 0 227px;
+    flex: 1 0 59.5%;
 }
 
 #calc-options {
@@ -111,6 +120,7 @@ button:active {
 
 .calc-option {
     flex: 1 1 26%;
+    font-size: 24px;
 }
 
 #calc-options-left {
@@ -125,6 +135,25 @@ button:active {
     flex-direction: column;
 }
 
+#calc-options-clear {
+    background:rgb(243, 114, 114);
+    color: white;
+    border: none;
+    border-left: 1px solid rgb(226, 226, 226);
+}
+
+#calc-options-clear-entry {
+    background: rgb(109, 154, 250);
+    color: white;
+    border: none;
+    border-left: 1px solid rgb(226, 226, 226);
+}
+
 #calc-options-equals {
     flex-basis: 52%;
+    background: rgb(74, 203, 111);
+    color: white;
+    font-size: 36px;
+    border: none;
+    border-left: 1px solid rgb(226, 226, 226);
 }
